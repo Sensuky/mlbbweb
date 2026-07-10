@@ -10,13 +10,13 @@
     --color-accent: #D4AF37;
     --color-border: #D1D5DB;
     --color-white: #FFFFFF
-
-    /* Tipografías */
-    --font-title: "Chakra Petch", sans-serif;
+        /* Tipografías */
+        --font-title: "Chakra Petch", sans-serif;
     --font-body: "Inter", sans-serif;
-     /* Sombras */
+    /* Sombras */
     --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
+
 /* ===========================
    RESET
 =========================== */
@@ -25,6 +25,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* ===========================
    HEADER
 =========================== */
@@ -34,39 +35,46 @@ header {
     padding: 20px 40px;
     align-items: center;
 }
-nav ul{
+
+nav ul {
     display: flex;
     list-style: none;
     gap: 40px;
     padding: 0px 550px 0px 0px;
 }
+
 /* ===========================
     HERO
     =========================== */
-.hero{
+.hero {
     background-color: var(--color-surface);
     border-radius: 16px;
     box-shadow: var(--shadow-card);
     margin-top: 30px;
     overflow: hidden;
 }
+
 .hero img {
     width: 100%;
     display: block;
 }
+
 .hero-content {
     padding: 24px;
 }
-.container  {
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .hero-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.hero-state{
+
+.hero-state {
     padding: 6px 12px;
     border-radius: 8px;
     background-color: var(--color-primary);
@@ -74,6 +82,7 @@ nav ul{
     font-weight: 600;
     font-size: 0.9rem;
 }
+
 /* ===========================
    FEATURED MATCHES
 =========================== */
@@ -81,10 +90,33 @@ nav ul{
     display: flex;
     margin-top: 20px;
 }
+
 .match-card {
     display: flex;
     margin: 6px 12px;
+    justify-content: space-between;
 }
+
+.team-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-right {
+    flex: 1;
+    display: column;
+}
+
+.match-center {
+    flex: 1;
+    display: column;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 /* ===========================
    ESTILOS GENERALES
@@ -94,6 +126,7 @@ body {
     color: var(--color-text);
     font-family: var(--font-body);
 }
+
 h1 {
     font-family: var(--font-title);
 }
