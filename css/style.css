@@ -1,0 +1,99 @@
+/* ===========================
+   VARIABLES
+=========================== */
+:root {
+    /* Colores */
+    --color-background: #F5F6F8;
+    --color-surface: #FFFFFF;
+    --color-text: #1F2937;
+    --color-primary: #2563EB;
+    --color-accent: #D4AF37;
+    --color-border: #D1D5DB;
+    --color-white: #FFFFFF
+
+    /* Tipografías */
+    --font-title: "Chakra Petch", sans-serif;
+    --font-body: "Inter", sans-serif;
+     /* Sombras */
+    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+/* ===========================
+   RESET
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ===========================
+   HEADER
+=========================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding: 0px 550px 0px 0px;
+}
+/* ===========================
+    HERO
+    =========================== */
+.hero{
+    background-color: var(--color-surface);
+    border-radius: 16px;
+    box-shadow: var(--shadow-card);
+    margin-top: 30px;
+    overflow: hidden;
+}
+.hero img {
+    width: 100%;
+    display: block;
+}
+.hero-content {
+    padding: 24px;
+}
+.container  {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-state{
+    padding: 6px 12px;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+/* ===========================
+   FEATURED MATCHES
+=========================== */
+.featured-matches {
+    display: flex;
+    margin-top: 20px;
+}
+.match-card {
+    display: flex;
+    margin: 6px 12px;
+}
+
+/* ===========================
+   ESTILOS GENERALES
+=========================== */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+}
+h1 {
+    font-family: var(--font-title);
+}
