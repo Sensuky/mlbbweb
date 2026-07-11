@@ -9,6 +9,7 @@
     --color-primary: #2563EB;
     --color-accent: #D4AF37;
     --color-border: #D1D5DB;
+    --color-text-secondary: #6B7280;
     --color-white: #FFFFFF
         /* Tipografías */
         --font-title: "Chakra Petch", sans-serif;
@@ -44,79 +45,208 @@ nav ul {
 }
 
 /* ===========================
-    HERO
-    =========================== */
+   HERO
+=========================== */
+
 .hero {
     background-color: var(--color-surface);
-    border-radius: 16px;
+    border-radius: 20px;
     box-shadow: var(--shadow-card);
-    margin-top: 30px;
     overflow: hidden;
 }
 
-.hero img {
-    width: 100%;
-    display: block;
-}
-
-.hero-content {
-    padding: 24px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+/* ===========================
+   HERO HEADER
+=========================== */
 
 .hero-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 20px 30px;
+
+    background: linear-gradient(
+        90deg,
+        var(--color-primary),
+        #60A5FA
+    );
+}
+
+.hero-header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero-header-left img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.hero-title {
+    color: white;
+    font-family: var(--font-title);
+    font-size: 2rem;
 }
 
 .hero-state {
-    padding: 6px 12px;
-    border-radius: 8px;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    font-weight: 600;
-    font-size: 0.9rem;
+    background-color: white;
+    color: var(--color-primary);
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+
+    font-weight: 700;
 }
 
 /* ===========================
-   FEATURED MATCHES
+   HERO BODY
 =========================== */
-.featured-matches {
-    display: flex;
-    margin-top: 20px;
+
+.hero-body {
+    padding: 30px;
 }
+
+.hero-banner {
+    width: 100%;
+    border-radius: 12px;
+
+    margin-bottom: 30px;
+}
+
+/* ===========================
+   HERO MATCHES
+=========================== */
+
+.hero-matches h2 {
+    margin-bottom: 20px;
+    font-family: var(--font-title);
+}
+
+/* ===========================
+   MATCH CARD
+=========================== */
 
 .match-card {
-    display: flex;
-    margin: 6px 12px;
-    justify-content: space-between;
+
+    background-color: var(--color-background);
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    box-shadow: var(--shadow-card);
+
 }
 
-.team-left {
-    flex: 1;
+/* ===========================
+   MATCH MAIN
+=========================== */
+
+.match-main {
+
     display: flex;
-    flex-direction: column;
+
     align-items: center;
+
 }
 
-.team-right {
+.team {
+
     flex: 1;
-    display: column;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    color: var(--color-text);
+
+}
+
+.team img {
+
+    width: 70px;
+
+    height: 70px;
+
+    object-fit: contain;
+
+}
+
+.team-name {
+
+    margin-top: 12px;
+
+    font-size: 1.1rem;
+
+    font-weight: 700;
+
 }
 
 .match-center {
+
     flex: 1;
-    display: column;
+
+    display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
+    gap: 8px;
+
 }
 
+.match-time {
 
+    color: #6B7280;
+
+    font-size: .95rem;
+
+}
+
+.match-versus {
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    font-family: var(--font-title);
+
+}
+
+.match-format {
+
+    color: var(--color-primary);
+
+    font-weight: 700;
+
+}
+
+/* ===========================
+   MATCH FOOTER
+=========================== */
+
+.match-footer {
+
+    margin-top: 24px;
+
+    padding-top: 16px;
+
+    border-top: 1px solid var(--color-border);
+
+    text-align: center;
+
+    font-weight: 600;
+
+}
 
 /* ===========================
    ESTILOS GENERALES

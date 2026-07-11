@@ -1,82 +1,96 @@
-<!DOCTYPE html> <!-- indica que el código es HTML5 -->
-<html lang="es"> <!-- indica el comienzo del codigo y que la pág será en español -->
+<!doctype html>
+<!-- indica que el código es HTML5 -->
+<html lang="es">
+  <!-- indica el comienzo del codigo y que la pág será en español -->
 
-<head>
-  <meta charset="UTF-8"> <!-- permite caracteres especiales -->
-  <meta name=viewport" content="width=device-width, initial-scale=1.0">
-  <!-- se usa para ajustar la página a cualquier tipo de pantalla -->
-  <title>BANG BANG DATA</title>
-</head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link
-  href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
-  rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- permite caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- se usa para ajustar la página a cualquier tipo de pantalla -->
+    <title>BANG BANG DATA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-  <header>
-    <div class="logo">
-      <img src="img/logo.png" alt="Logo de la página BANG BANG DATA">
-      <span> BANG BANG DATA</span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Eventos</a></li>
-        <li><a href="#">Matches</a></li>
-        <li><a href="#">Teams</a></li>
-        <li><a href="#">Players</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="container">
-      <section class="hero">
-        <img src="img/hero.jpg" alt="Imagen del evento principal" />
-        <div class="hero-content">
-          <div class="hero-header">
-            <h1 class="hero-title">TORNEO IMPORTANTE DE E-SPORTS</h1>
-            <span class="hero-state">. EN VIVO</span>
-          </div>
-      </section>
-      <section class="featured-matches">
-        <h2>Próximos partidos</h2>
-        <div class="match-card">
-          <div class="team-left">
-            <img src="img/team-1.png" alt="Logo de equipo 1">
-            <span class="team-name">
-              TEAM 1
-            </span>
-          </div>
-          <div class="match-center">
-            <span class="match-versus">
-              VS
-            </span>
-            <span class="match-format">
-              BO5
-            </span>
-            <span class="match-time">
-              Hoy • 17:00
-            </span>
-          </div>
-          <div class="team-right">
-            <img src="img/team-2.png" alt="Logo de equipo 2">
-            <span class="team-name">
-              TEAM 2
-            </span>
-          </div>
-          <div class="match-footer">
-            <span class="match-event">
-              NOMBRE DE TORNEO
-            </span>
-          </div>
-        </div>
-    </div>
-    </section>
-    </section>
-    </div>
-  </main>
-</body>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo de la página BANG BANG DATA" />
+        <span> BANG BANG DATA</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Matches</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">Players</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <section class="hero">
+          <header class="hero-header">
+            <div class="hero-header-left">
+              <img src="img/logo-torneo.png" alt="Logo del torneo" />
 
+              <h1 class="hero-title">MSC at EWC 2026</h1>
+            </div>
+
+            <span class="hero-state"> ● EN VIVO </span>
+          </header>
+
+          <div class="hero-body">
+            <img
+              class="hero-banner"
+              src="img/hero.jpg"
+              alt="Imagen del evento principal"
+            />
+
+            <section class="hero-matches">
+              <h2>Partido destacado</h2>
+
+              <article class="match-card">
+                <div class="match-main">
+                  <a href="#" class="team">
+                    <img src="img/team1.png" alt="Logo Team 1" />
+
+                    <span class="team-name"> Team 1 </span>
+                  </a>
+
+                  <div class="match-center">
+                    <span class="match-time"> Hoy · 17:00 </span>
+
+                    <span class="match-versus"> VS </span>
+
+                    <span class="match-format"> BO5 </span>
+                  </div>
+
+                  <a href="#" class="team">
+                    <img src="img/team2.png" alt="Logo Team 2" />
+
+                    <span class="team-name"> Team 2 </span>
+                  </a>
+                </div>
+
+                <footer class="match-footer">MSC at EWC 2026</footer>
+              </article>
+
+              <h2>Próximos partidos</h2>
+
+              <div class="upcoming-list">
+                <!-- Después irán varias match-card más pequeñas -->
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
