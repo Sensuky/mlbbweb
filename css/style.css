@@ -66,11 +66,9 @@ nav ul {
 
     padding: 20px 30px;
 
-    background: linear-gradient(
-        90deg,
-        var(--color-primary),
-        #60A5FA
-    );
+    background: linear-gradient(90deg,
+            var(--color-primary),
+            #60A5FA);
 }
 
 .hero-header-left {
