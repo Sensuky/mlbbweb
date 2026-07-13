@@ -9,6 +9,9 @@
     --color-primary: #2563EB;
     --color-accent: #D4AF37;
     --color-border: #D1D5DB;
+    --live-color: #DC2626;
+    --upcoming-color: #2563EB;
+    --finished-color: #6B7280;
     --color-text-secondary: #6B7280;
     --color-white: #FFFFFF
         /* Tipografías */
@@ -91,7 +94,7 @@ nav ul {
 
 .hero-state {
     background-color: white;
-    color: var(--color-primary);
+    color: var(--live);
 
     padding: 8px 16px;
 
@@ -113,6 +116,9 @@ nav ul {
     border-radius: 12px;
 
     margin-bottom: 30px;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 /* ===========================
@@ -129,15 +135,13 @@ nav ul {
 =========================== */
 
 .match-card {
-
     background-color: var(--color-background);
-
     border-radius: 16px;
-
     padding: 24px;
-
     box-shadow: var(--shadow-card);
-
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--color-border);
 }
 
 /* ===========================
@@ -149,6 +153,11 @@ nav ul {
     display: flex;
 
     align-items: center;
+
+
+    justify-content: space-between;
+
+    gap: 40px;
 
 }
 
@@ -165,16 +174,21 @@ nav ul {
     text-decoration: none;
 
     color: var(--color-text);
+    padding: 20px;
 
 }
 
 .team img {
 
-    width: 70px;
+    width: 90px;
 
-    height: 70px;
+    height: 90px;
 
     object-fit: contain;
+
+    margin-bottom: 12px;
+    transition: .2s;
+    transform: translateY(-4px);
 
 }
 
@@ -185,6 +199,7 @@ nav ul {
     font-size: 1.1rem;
 
     font-weight: 700;
+
 
 }
 
@@ -199,6 +214,7 @@ nav ul {
     align-items: center;
 
     gap: 8px;
+    min-width: 150px;
 
 }
 
