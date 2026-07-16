@@ -1,93 +1,103 @@
 <!doctype html>
 <!-- indica que el código es HTML5 -->
 <html lang="es">
-<!-- indica el comienzo del codigo y que la pág será en español -->
+  <!-- indica el comienzo del codigo y que la pág será en español -->
 
-<head>
-  <meta charset="UTF-8" />
-  <!-- permite caracteres especiales -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- se usa para ajustar la página a cualquier tipo de pantalla -->
-  <title>BANG BANG DATA</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- permite caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- se usa para ajustar la página a cualquier tipo de pantalla -->
+    <title>BANG BANG DATA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-  <header>
-    <div class="logo">
-      <img src="img/logo.png" alt="Logo de la página BANG BANG DATA" />
-      <span> BANG BANG DATA</span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Matches</a></li>
-        <li><a href="#">Teams</a></li>
-        <li><a href="#">Players</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="container">
-      <section class="hero">
-        <header class="hero-header">
-          <div class="hero-header-left">
-            <img src="img/logo-torneo.png" alt="Logo del torneo" />
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo de la página BANG BANG DATA" />
+        <span> BANG BANG DATA</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Matches</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">Players</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <section class="hero">
+          <header class="hero-header">
+            <div class="hero-header-left">
+              <img src="img/logo-torneo.png" alt="Logo del torneo" />
 
-            <h1 class="hero-title">Nombre de torneo</h1>
-            <p class="hero-stage">Fase del torneo</p>
-          </div>
+              <h1 class="hero-title">Nombre de torneo</h1>
+              <p class="hero-stage">Fase del torneo</p>
+            </div>
 
-          <span class="hero-state"> ● EN VIVO </span>
-        </header>
+            <span class="hero-state"> ● EN VIVO </span>
+          </header>
 
-        <div class="hero-body">
-          <img class="hero-banner" src="img/hero.jpg" alt="Imagen del evento principal" />
+          <div class="hero-body">
+            <img
+              class="hero-banner"
+              src="img/hero.jpg"
+              alt="Imagen del evento principal"
+            />
 
-          <section class="hero-matches">
-            <h2>Partido destacado</h2>
+            <section class="hero-matches">
+              <h2>Partido destacado</h2>
 
-            <article class="match-card">
-              <div class="match-main">
-                <a href="#" class="team">
-                  <img src="img/team1.png" alt="Logo Team 1" />
+              <article class="match-card">
+                <div class="match-main">
+                  <a href="#" class="team">
+                    <img src="img/team1.png" alt="Logo Team 1" />
 
-                  <span class="team-name"> Team 1 </span>
-                </a>
+                    <span class="team-name"> Team 1 </span>
+                  </a>
 
-                <div class="match-center">
-                  <span class="match-time"> Fecha y Hora </span>
+                  <div class="match-center">
+                    <span class="match-time"> Fecha y Hora </span>
 
-                  <span class="match-versus"> VS </span>
+                    <span class="match-versus"> VS </span>
 
-                  <span class="match-format"> Games </span>
+                    <span class="match-format"> Games Quantity</span>
+                  </div>
+
+                  <a href="#" class="team">
+                    <img src="img/team2.png" alt="Logo Team 2" />
+
+                    <span class="team-name"> Team 2 </span>
+                  </a>
                 </div>
 
-                <a href="#" class="team">
-                  <img src="img/team2.png" alt="Logo Team 2" />
+                <footer class="match-footer">Nombre de torneo</footer>
+              </article>
 
-                  <span class="team-name"> Team 2 </span>
-                </a>
+              <h2>Próximos partidos</h2>
+
+              <div class="upcoming-list">
+                <article class="upcoming-match">
+                  <span class="upcoming-time">Fecha y Hora</span>
+                  <span class="upcoming-team">TEAM 1</span>
+                  <span class="upcoming-versus">VS</span>
+                  <span class="upcoming-format">Games Quantity</span>
+                  <span class="upcoming-team">TEAM 2</span>
+                </article>
               </div>
-
-              <footer class="match-footer">Nombre de torneo</footer>
-            </article>
-
-            <h2>Próximos partidos</h2>
-
-            <div class="upcoming-list">
-              <!-- Acá van match-card más pequeñas -->
-            </div>
-          </section>
-        </div>
-      </section>
-    </div>
-  </main>
-</body>
-
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
