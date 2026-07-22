@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- indica que el código es HTML5 -->
-<html lang="es">
+<html lang="en">
   <!-- indica el comienzo del codigo y que la pág será en español -->
 
   <head>
@@ -18,10 +18,11 @@
   </head>
 
   <body>
+    <!-- HEADER & NAVIGATION MENU -->
     <header>
       <div class="logo">
-        <img src="img/logo.png" alt="Logo de la página BANG BANG DATA" />
-        <span> BANG BANG DATA</span>
+        <img src="img/logo.png" alt="BANG BANG DATA Logo" />
+        <span>BANG BANG DATA</span>
       </div>
       <nav>
         <ul>
@@ -30,74 +31,145 @@
           <li><a href="#">Matches</a></li>
           <li><a href="#">Teams</a></li>
           <li><a href="#">Players</a></li>
+          <li><a href="#">Fantasy</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="container">
+
+    <!-- MAIN THREE-COLUMN LAYOUT -->
+    <main class="main-layout container">
+      <!-- 1. LEFT COLUMN: HIGHLIGHTS & RANKING TEAMS -->
+      <div class="left-column">
+        <!-- HIGHLIGHTS SECTION -->
+        <section class="highlights-section">
+          <h2>Highlights</h2>
+          <article class="highlight-item">
+            <span class="highlight-tag">HOT</span>
+            <p>M6 World Championship Announced</p>
+          </article>
+        </section>
+
+        <!-- RANKING TEAMS SECTION -->
+        <section class="rankings-section">
+          <h2>Team Rankings</h2>
+          <div class="ranking-list">
+            <div class="ranking-item">
+              <span class="rank">#1</span>
+              <span class="team-name">ONIC Esports</span>
+            </div>
+            <div class="ranking-item">
+              <span class="rank">#2</span>
+              <span class="team-name">AP.Bren</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- 2. CENTER COLUMN (MAIN CONTENT): HERO, REGIONAL & OTHER TOURNAMENTS -->
+      <div class="center-column">
+        <!-- MAIN FEATURED TOURNAMENT (HERO) -->
         <section class="hero">
           <header class="hero-header">
             <div class="hero-header-left">
-              <img src="img/logo-torneo.png" alt="Logo del torneo" />
-
-              <h1 class="hero-title">Nombre de torneo</h1>
-              <p class="hero-stage">Fase del torneo</p>
+              <img src="img/logo-torneo.png" alt="Tournament Logo" />
+              <h1 class="hero-title">MSC 2026 Main Event</h1>
             </div>
-
-            <span class="hero-state"> ● EN VIVO </span>
+            <span class="hero-state">● LIVE</span>
           </header>
 
           <div class="hero-body">
-            <img
-              class="hero-banner"
-              src="img/hero.jpg"
-              alt="Imagen del evento principal"
-            />
-
             <section class="hero-matches">
-              <h2>Partido destacado</h2>
-
+              <h2>Featured Match</h2>
               <article class="match-card">
                 <div class="match-main">
                   <a href="#" class="team">
-                    <img src="img/team1.png" alt="Logo Team 1" />
-
-                    <span class="team-name"> Team 1 </span>
+                    <img src="img/team1.png" alt="Team 1 Logo" />
+                    <span class="team-name">ONIC Esports</span>
                   </a>
-
                   <div class="match-center">
-                    <span class="match-time"> Fecha y Hora </span>
-
-                    <span class="match-versus"> VS </span>
-
-                    <span class="match-format"> Games Quantity</span>
+                    <span class="match-time">18:00 UTC</span>
+                    <span class="match-versus">VS</span>
+                    <span class="match-format">Bo5</span>
                   </div>
-
                   <a href="#" class="team">
-                    <img src="img/team2.png" alt="Logo Team 2" />
-
-                    <span class="team-name"> Team 2 </span>
+                    <img src="img/team2.png" alt="Team 2 Logo" />
+                    <span class="team-name">AP.Bren</span>
                   </a>
                 </div>
-
-                <footer class="match-footer">Nombre de torneo</footer>
+                <footer class="match-footer">MSC 2026 - Grand Finals</footer>
               </article>
 
-              <h2>Próximos partidos</h2>
-
+              <h2>Upcoming Matches</h2>
               <div class="upcoming-list">
                 <article class="upcoming-match">
-                  <span class="upcoming-time">Fecha y Hora</span>
-                  <span class="upcoming-team">TEAM 1</span>
+                  <span class="upcoming-time">21:00</span>
+                  <span class="upcoming-team">ECHO</span>
                   <span class="upcoming-versus">VS</span>
-                  <span class="upcoming-format">Games Quantity</span>
-                  <span class="upcoming-team">TEAM 2</span>
+                  <span class="upcoming-team">RRQ</span>
+                  <span class="upcoming-format">Bo3</span>
                 </article>
               </div>
             </section>
           </div>
         </section>
+
+        <!-- REGIONAL QUALIFYING TOURNAMENTS -->
+        <section class="regional-tournaments">
+          <h2>Regional Tournaments</h2>
+          <div class="tournaments-grid">
+            <article class="tournament-card">
+              <img src="img/mpl-id.png" alt="MPL ID" />
+              <div class="tournament-info">
+                <h3>MPL ID S13</h3>
+                <p class="region">Indonesia</p>
+              </div>
+              <span class="status finished">FINISHED</span>
+            </article>
+          </div>
+        </section>
+
+        <!-- OTHER TOURNAMENTS (PARALLEL / SECONDARY TOURNAMENTS) -->
+        <section class="other-tournaments">
+          <h2>Other Tournaments</h2>
+          <article class="secondary-tournament-card">
+            <header class="card-header">
+              <span class="status live">LIVE</span>
+              <span class="tournament-category">Women's Division</span>
+            </header>
+            <h3>MWI 2026 (MSC Women's Invitational)</h3>
+            <p class="tournament-dates">July 20 - July 26</p>
+            <div class="card-footer">
+              <span class="prize-pool">Prize Pool: $500,000</span>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <!-- 3. RIGHT COLUMN: NEWS & PLAYER TRANSFERS -->
+      <div class="right-column">
+        <!-- NEWS SECTION -->
+        <section class="news-section">
+          <h2>News</h2>
+          <article class="news-card">
+            <h3>Kairi Renews Contract with ONIC Esports</h3>
+            <span class="news-date">2 hours ago</span>
+          </article>
+        </section>
+
+        <!-- PLAYER TRANSFERS SECTION -->
+        <section class="transfers-section">
+          <h2>Player Transfers</h2>
+          <div class="transfer-card">
+            <span class="player-name">KarlTzy</span>
+            <p class="transfer-detail">ECHO ➔ Free Agent</p>
+          </div>
+        </section>
       </div>
     </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 BANG BANG DATA - All rights reserved.</p>
+    </footer>
   </body>
 </html>
